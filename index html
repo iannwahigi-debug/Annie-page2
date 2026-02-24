@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Something Small for Annie</title>
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        font-family: Arial, sans-serif;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: radial-gradient(circle at center, #0f172a, #1e293b);
+        color: white;
+    }
+
+    .container {
+        text-align: center;
+        max-width: 600px;
+        position: relative;
+        z-index: 2;
+    }
+
+    h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+        opacity: 0;
+    }
+
+    #message {
+        font-size: 22px;
+        line-height: 1.6;
+        opacity: 0;
+    }
+
+    .phrase {
+        position: absolute;
+        font-size: 18px;
+        color: #ffd700;
+        opacity: 0;
+        animation: floatUp 4s forwards;
+    }
+
+    @keyframes fadeIn {
+        to {
